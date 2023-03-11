@@ -205,5 +205,15 @@
 
 // for(let stock of store1.stock){
 //     console.log(stock.model, stock["brand"], stock.manufacturingYear)
-// }   
+// } 
 
+//calculator which sums 2 values and subtracts  one value of the other
+let calc = {
+    sum: (a,b) => a+b,
+    subtraction: function(a,b){
+        return a-b
+    }
+}
+
+console.log(calc.sum(7,8))
+console.log(calc.subtraction(6,8))
