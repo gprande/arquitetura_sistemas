@@ -25,10 +25,10 @@ const openFile = (fileName) => {
     const showContent = (error, content) => {
         if (error)
             console.log("Error: " + error)
-        else{
+        else {
             console.log("Content: " + content.toString())
-            const result = +content.toString() *2
-            const done = (error)=>{
+            const result = +content.toString() * 2
+            const done = (error) => {
                 console.log(error ? "Error:" + error : "Write ok")
             }
             fs.writeFile('double.txt', result.toString(), done)
