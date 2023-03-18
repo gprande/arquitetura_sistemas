@@ -54,3 +54,4 @@ function longCalculus(n) {
 }
 const myPromise = longCalculus(10)
 myPromise.then((result) => { console.log(result) })
+
